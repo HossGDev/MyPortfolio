@@ -1,177 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoss Web Portfolio</title>
-    <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="fanta.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hoss Web Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="fanta.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
 </head>
+
 <body>
-    <header>
-        <a href="/">Hoss G</a>
-        <nav>
-            <a target="_blank" href="https://github.com/HossGDev"><i class="fa-brands fa-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/hoss-gassaway-7a1514364/"><i class="fa-brands fa-linkedin"></i></a>
-        </nav>
+  <header>
+    <a href="/">Hoss G</a>
+    <nav>
+      <a target="_blank" href="https://github.com/HossGDev"><i class="fa-brands fa-github"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/hoss-gassaway-7a1514364/"><i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+  </header>
 
-    </header>
-    <main>
-        <section>
-            <div class="intro-header">
-                <h1>Hey There! I'm Hoss</h1>
-                <p>Software Engineer</p>
+  <main>
+    <section>
+      <div class="intro-header">
+        <h1>Hey There! I'm Hoss</h1>
+        <p>Software Engineer</p>
+      </div>
+
+      <h5 class="intro-description">
+        I'm a software engineer when I need to sound smart, but really just a developer who likes building stuff.
+        I'm based in Maricopa, Arizona. I love spending time with my family, fishing, and solving real-world problems
+        one line of code at a time.
+      </h5>
+
+      <div class="links-container">
+        <i class="fa-solid link-arrow fa-arrow-right"></i>
+        <a href="mailto:hossgassaway@gmail.com">Email Me</a>
+        <a target="_blank" href="https://github.com/HossGDev">GitHub</a>
+        <a target="_blank" href="https://www.linkedin.com/in/hoss-gassaway-7a1514364/">LinkedIn</a>
+      </div>
+
+      <div id="play-game">
+        <button id="playBtn">Play a game???</button>
+      </div>
+
+      <div style="display: none;" class="colorDiv">
+        <h4>Pick a color</h4>
+        <p style="display: none;">Thanks a lot, now it's ruined 😅</p>
+        <input type="color" id="color-picker" value="#0084ff" />
+        <button style="display: none;">Reset</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <table>
+        <thead>
+          <tr><th>Area</th><th>Technologies</th></tr>
+        </thead>
+        <tbody>
+          <tr><th>JavaScript</th><th>ReactJS | React Native | NodeJs & ExpressJS</th></tr>
+          <tr><th>Python</th><th></th></tr>
+          <tr><th>Web</th><th>FantaCSS | Git | CI/CD | Docker | Kubernetes | AWS</th></tr>
+          <tr><th>Design</th><th>Blender | Godot</th></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>My Projects</h2>
+      <div class="cards-grid">
+        <!-- Project Card Template (Repeat and replace) -->
+        <div class="project-card">
+          <div>
+            <p>Date</p>
+            <h4>Project Name</h4>
+            <div class="tech-list">
+              <div class="card-button-secondary"><p>Next.JS</p></div>
+              <div class="card-button-secondary"><p>Next.JS</p></div>
+              <div class="card-button-secondary"><p>Next.JS</p></div>
             </div>
-            <h5 class="intro-description">
-                I'm a software engineer when I need to sound smart, but really just a developer who likes building stuff.
-                I'm based in Maricopa, Arizona. I love spending time with my family, fishing, and solving real-world problems
-                one line of code at a time.
-            </h5>
-            <div class="links-container">
-                <i class="fa-solid link-arrow fa-arrow-right"></i>
-                <a  href="mailto:hossgassaway@gmail.com">
-                     Email Me
-                </a>
-                <a target="_blank" href="https://github.com/HossGDev">GitHub</a>
-                <a target="_blank" href="https://www.linkedin.com/in/hoss-gassaway-7a1514364/">linkedin</a>
-
+            <p>These are my projects... I need to finish this.</p>
+            <div class="project-links">
+              <a target="_blank" href="/">Live</a>
+              <a target="_blank" href="/">GitHub</a>
             </div>
-            <div id="play-game">
-                <button onclick="">Play game???</button>
+            <div class="img-div">
+              <img class="big-img" src="./public/fantacss.png" alt="Project thumbnail for HossGDev"/>
             </div>
-            <div style="display: none;" id="color-div">
-                <h4>Pick a color</h4>
-                <p style="display: none;">Thank's alot now its ruined</p>
-                <input type="color" id="color-picker" onchange="" value="#0084ff" />
-                <button style="display: none;" onclick="">Reset</button>
-            </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-        <section>
-            <h2>Skills</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Area</th>
-                        <th>Technologies</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>JavaScript</th>
-                        <th>ReactJS | React Native | NodeJs & ExpressJS</th>
-                    </tr>
-                    <tr>
-                        <th>Python</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th>Web</th>
-                        <th>FantaCSS | Git | Ci/CD | Docker | Kubernetes | AWS</th>
-                    </tr>
-                    <tr>
-                        <th>Design</th>
-                        <th>Blender | Godot</th>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+  <footer>
+    <p>By <a target="_blank" href="#">HossGDev</a> 🌟 the repo on <a target="_blank" href="#">GitHub</a></p>
+  </footer>
 
-        <section>
-            <h2>My Projects</h2>
-            <div class="cards-grid">
-                <!--First project-->            
-                <div class="project-card">
-                    <div>
-                        <p>Date</p>
-                        <h4>Project Name</h4>
-                        <div class="tech-lists">                
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>                           
-                        </div>
-                        <p>
-                            these are my projects.. I need to finish this
-                        </p>
-                        <div class="project-links">
-                            <a target="_blank" href="/">Live</a>
-                            <a target="_blank" href="/">GitHub</a>
-                        </div>
-                        <div class="image-div">
-                            <img class="big-img" src="/1_web_portfolio/public/fantacss.png" alt="HossGDevThumbnail">
-                        </div>
-                    </div>
-                </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const body = document.querySelector('body');
+      const colorInput = document.getElementById('color-picker');
+      const colorDiv = document.querySelector('.colorDiv');
+      const hiddenText = colorDiv.querySelector('p');
+      const resetBtn = colorDiv.querySelector('button');
+      const playBtn = document.getElementById('playBtn');
 
-                <!--Second project-->
-                <div class="project-card">
-                    <div>
-                        <p>Date</p>
-                        <h4>Project Name</h4>
-                        <div class="tech-lists">                
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>                           
-                        </div>
-                        <p>
-                            these are my projects.. I need to finish this
-                        </p>
-                        <div class="project-links">
-                            <a target="_blank" href="/">Live</a>
-                            <a target="_blank" href="/">GitHub</a>
-                        </div>
-                        <div class="image-div">
-                            <img class="big-img" src="/1_web_portfolio/public/fantacss.png" alt="HossGDevThumbnail">
-                        </div>
-                    </div>
-                </div>
+      function playGame() {
+        colorDiv.style.display = 'block';
+        playBtn.style.display = 'none';
+      }
 
-                <!--Third project-->
-                <div class="project-card">
-                    <div>
-                        <p>Date</p>
-                        <h4>Project Name</h4>
-                        <div class="tech-lists">                
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>
-                            <div class="card-button-secondary">
-                                <p>Next.JS</p>
-                            </div>                           
-                        </div>
-                        <p>
-                            these are my projects.. I need to finish this
-                        </p>
-                        <div class="project-links">
-                            <a target="_blank" href="/">Live</a>
-                            <a target="_blank" href="/">GitHub</a>
-                        </div>
-                        <div class="image-div">
-                            <img class="big-img" src="/1_web_portfolio/public/fantacss.png" alt="HossGDevThumbnail">
-                        </div>
-                    </div>
-                </div                                         
-        </section>
-    </main>
-    <footer>
-        <p>By <a target="_blank" href="">HossGDev</a>🌟 the repo on <a target="_blank" href="">GitHub</a></p> 
-    </footer>
-    <script></script>
+      function changeColor() {
+        const selectedColor = colorInput.value;
+        body.style.background = selectedColor;
+        resetBtn.style.display = 'block';
+        hiddenText.style.display = 'block';
+        colorInput.style.display = 'none';
+      }
+
+      function resetColor() {
+        body.style.background = 'white';
+        colorInput.style.display = 'block';
+        playBtn.style.display = 'block';
+        hiddenText.style.display = 'none';
+        resetBtn.style.display = 'none';
+        colorDiv.style.display = 'none';
+      }
+
+      playBtn.addEventListener('click', playGame);
+      colorInput.addEventListener('change', changeColor);
+      resetBtn.addEventListener('click', resetColor);
+    });
+  </script>
 </body>
 </html>
