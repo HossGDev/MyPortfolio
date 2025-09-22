@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: hossgdev.com
+Token: fc06562767e990ed0ffa39456a2f22585906ceb3db103907f18b4f004c58d5eb
